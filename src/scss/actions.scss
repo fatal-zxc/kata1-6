@@ -1,0 +1,17 @@
+.actions {
+    display: flex;
+}
+
+.actions__item {
+    margin: 0 8px;
+    height: 40px;
+}
+
+.actions__button {
+    height: 40px;
+    background-color: #ffffff;
+}
+
+.actions__button:hover {
+    opacity: 0.7;
+}

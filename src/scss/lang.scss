@@ -1,0 +1,19 @@
+.lang {
+    display: flex;
+}
+
+.lang__button {
+    margin: 0 7px;
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #ffffff;
+}
+
+.lang__button:first-of-type {
+    margin-left: 0;
+}
+
+.lang__button:hover {
+    opacity: 0.6;
+}

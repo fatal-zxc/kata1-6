@@ -1,0 +1,33 @@
+.menu {
+    width: 320px;
+    box-shadow: 16px 0 52px 0 rgba(12, 24, 80, 0.2);
+    position: absolute;
+    left: -400px;
+    background-color: white;
+    z-index: 2;
+}
+
+.menu-toright {
+    animation: menu-toright 1s ease-in-out forwards;
+}
+
+.menu-toleft {
+    animation: menu-toleft 1s ease-in-out forwards;
+}
+
+@keyframes menu-toright {
+    to {left: 0px;}
+}
+
+@keyframes menu-toleft {
+    from {left: 0px}
+    to {left: -400px;}
+}
+
+@media only screen and (min-width: 1300px) {
+    .menu {
+        left: 0px;
+        width: 306px;
+        box-shadow: none;
+    }
+}

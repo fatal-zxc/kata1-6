@@ -1,0 +1,23 @@
+.hide {
+  display: none;
+}
+
+.tablet {
+  display: none;
+}
+
+.laptop {
+  display: none;
+}
+
+@media only screen and (min-width: 321px) {
+  .tablet {
+      display: block;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .laptop {
+    display: block;
+  }
+}

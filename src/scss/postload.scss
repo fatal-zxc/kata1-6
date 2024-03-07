@@ -1,0 +1,69 @@
+.active {
+    height: 100%;
+}
+
+.brands-active {
+    animation: brands-reveal 1s forwards;
+}
+
+.brands-hide {
+    animation: brands-hide 1s forwards;
+}
+
+.text-reveal {
+    animation: text-reveal 0.2s forwards;
+}
+
+.text-hide {
+    animation: text-hide 0.2s forwards;
+}
+
+.hardware-active {
+    animation: hardware-reveal 1s forwards;
+}
+
+.hardware-hide {
+    animation: hardware-hide 1s forwards;
+}
+
+@keyframes brands-reveal {
+    from {height: 176px;}
+    to {height: 340px;}
+}
+
+@keyframes brands-hide {
+    from {height: 340px;}
+    to {height: 176px;}
+}
+
+@keyframes text-reveal {
+    from {height: 0%; font-size: 0px; opacity: 0;}
+    to {height: 30%; font-size: 13px; opacity: 1;}
+}
+
+@keyframes text-hide {
+    from {height: 30%; font-size: 13px; opacity: 1;}
+    to {height: 0%; font-size: 0px; opacity: 0;}
+}
+
+@keyframes hardware-reveal {
+    from {height: 176px;}
+    to {height: 530px;}
+}
+
+@keyframes hardware-hide {
+    from {height: 530px;}
+    to {height: 176px;}
+}
+
+@media only screen and (min-width: 1300px) {
+    @keyframes brands-reveal {
+        from {height: 176px;}
+        to {height: 268px;}
+    }
+    
+    @keyframes brands-hide {
+        from {height: 268px;}
+        to {height: 176px;}
+    }
+}

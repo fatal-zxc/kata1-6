@@ -1,0 +1,13 @@
+.price {
+    background-color: #f8f8f8;
+}
+
+.price__cards {
+    display: block;
+}
+
+@media only screen and (min-width: 550px) {
+    .price__cards {
+        display: none;
+    }
+}
