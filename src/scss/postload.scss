@@ -2,6 +2,19 @@
     height: 100%;
 }
 
+// .blur {
+//     animation: blur 1s forwards;
+// }
+
+.unblur {
+    animation: unblur__height 0s forwards 1s,
+               unblur__opacity 1s forwards;
+}
+
+.getblur {
+    animation: getblur 1s forwards;
+}
+
 .brands-active {
     animation: brands-reveal 1s forwards;
 }
@@ -24,6 +37,20 @@
 
 .hardware-hide {
     animation: hardware-hide 1s forwards;
+}
+
+@keyframes unblur__height {
+    to {height: 0;}
+}
+
+@keyframes unblur__opacity {
+    from {opacity: 0.9;}
+    to {opacity: 0;}
+}
+
+@keyframes getblur {
+    from {opacity: 0;}
+    to {opacity: 0.9;}
 }
 
 @keyframes brands-reveal {

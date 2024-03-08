@@ -51,11 +51,10 @@ module.exports = {
       // Подключаем картинки из css
       {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
-        use: [
-          {
-            loader: 'file-loader?name=./static/[name].[ext]'
-          },
-        ]
+        type: 'asset/resource',
+        generator: {
+          filename: 'img/[name][ext]'
+        },
       },
     ],
   },

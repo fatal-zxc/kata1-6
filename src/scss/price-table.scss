@@ -21,6 +21,7 @@
 
 .price-table__row {
     display: flex;
+    justify-content: space-between;
     height: 64px;
     align-items: center;
     background-color: #ffffff;
@@ -68,6 +69,10 @@
     width: 120px;
     height: 32px;
     margin-left: 20px;
+}
+
+.price-table__row:nth-of-type(1) .price-table__button {
+    visibility: hidden;
 }
 
 @media only screen and (min-width: 500px) {
