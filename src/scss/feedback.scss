@@ -3,8 +3,9 @@
     box-shadow: 8px 0 52px 0 rgba(12, 24, 80, 0.2);
     position: absolute;
     right: -400px;
+    top: -1000px;
     background-color: #ffffff;
-    z-index: 3;
+    z-index: 4;
     height: 700px;
 }
 
@@ -64,6 +65,7 @@
     font-size: 14px;
     line-height: 16px;
     margin-top: 16px;
+    width: 282px;
 }
 
 .feedback__link {
@@ -80,11 +82,11 @@
 }
 
 .feedback-toright {
-    animation: feedback-toright 1s ease-in-out forwards;
+    animation: feedback-toright 1s ease-in-out forwards, feedback-deinit 0s forwards 1s;
 }
 
 .feedback-toleft {
-    animation: feedback-toleft 1s ease-in-out forwards;
+    animation: feedback-toleft 1s ease-in-out forwards, feedback-init 0s forwards;
 }
 
 @keyframes feedback-toleft {
@@ -92,8 +94,17 @@
 }
 
 @keyframes feedback-toright {
-    from {right: 0px;}
-    to {right: -400px;}
+    from {right: 0px; top: 0px}
+    to {right: -400px; top: 0px}
+}
+
+@keyframes feedback-init {
+    to {top: 0px;}
+}
+
+@keyframes feedback-deinit {
+    from {top: 0px;}
+    to {top: -1000px;}
 }
 
 @media only screen and (min-width: 500px) {

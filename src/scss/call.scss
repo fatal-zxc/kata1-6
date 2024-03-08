@@ -3,8 +3,9 @@
     box-shadow: 8px 0 52px 0 rgba(12, 24, 80, 0.2);
     position: absolute;
     right: -400px;
+    top: -1000px;
     background-color: #ffffff;
-    z-index: 3;
+    z-index: 4;
     height: 700px;
 }
 
@@ -63,11 +64,11 @@
 }
 
 .call-toright {
-    animation: call-toright 1s ease-in-out forwards;
+    animation: call-toright 1s ease-in-out forwards, call-deinit 0s forwards 1s;
 }
 
 .call-toleft {
-    animation: call-toleft 1s ease-in-out forwards;
+    animation: call-toleft 1s ease-in-out forwards, call-init 0s forwards;
 }
 
 @keyframes call-toleft {
@@ -75,8 +76,17 @@
 }
 
 @keyframes call-toright {
-    from {right: 0px;}
-    to {right: -400px;}
+    from {right: 0px; top: 0px}
+    to {right: -400px; top: 0px}
+}
+
+@keyframes call-init {
+    to {top: 0px;}
+}
+
+@keyframes call-deinit {
+    from {top: 0px;}
+    to {top: -1000px;}
 }
 
 @media only screen and (min-width: 500px) {
