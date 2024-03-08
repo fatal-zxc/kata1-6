@@ -39,9 +39,10 @@
 .introduction__img {
     height: 176px;
     width: 320px;
+    align-self: center;
 }
 
-@media only screen and (min-width: 321px) {
+@media only screen and (min-width: 520px) {
     .introduction {
         flex-direction: row;
     }

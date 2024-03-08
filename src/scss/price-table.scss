@@ -16,7 +16,7 @@
 .price-table__content {
     display: flex;
     flex-direction: column;
-    margin: 0 24px 24px 24px;
+    margin: 0 16px 24px 16px;
 }
 
 .price-table__row {
@@ -45,16 +45,23 @@
 }
 
 .price-table__text:nth-of-type(1) {
-    width: 54%;
+    width: 42%;
     margin-left: 16px;
 }
 
 .price-table__text:nth-of-type(2) {
     width: 11%;
+    margin-right: 15px;
+}
+
+.price-table__row:nth-of-type(2) .price-table__text:nth-of-type(2) {
+    font-size: 12px;
 }
 
 .price-table__text:nth-of-type(3) {
     width: 11%;
+    // align-self: center;
+    // text-align: center;
 }
 
 .price-table__button {
@@ -63,9 +70,23 @@
     margin-left: 20px;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 500px) {
     .price-table {
         display: block;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .price-table__content {
+        margin: 0 24px 24px 24px;
+    }
+
+    .price-table__row:nth-of-type(2) .price-table__text:nth-of-type(2) {
+        font-size: 14px;
+    }
+
+    .price-table__text:nth-of-type(1) {
+        width: 54%;
     }
 }
 

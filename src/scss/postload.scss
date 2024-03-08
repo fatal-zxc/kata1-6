@@ -28,11 +28,11 @@
 
 @keyframes brands-reveal {
     from {height: 176px;}
-    to {height: 340px;}
+    to {height: 530px;}
 }
 
 @keyframes brands-hide {
-    from {height: 340px;}
+    from {height: 530px;}
     to {height: 176px;}
 }
 
@@ -48,12 +48,34 @@
 
 @keyframes hardware-reveal {
     from {height: 176px;}
-    to {height: 530px;}
+    to {height: 870px;}
 }
 
 @keyframes hardware-hide {
-    from {height: 530px;}
+    from {height: 870px;}
     to {height: 176px;}
+}
+
+@media only screen and (min-width: 750px) {
+    @keyframes brands-reveal {
+        from {height: 176px;}
+        to {height: 340px;}
+    }
+    
+    @keyframes brands-hide {
+        from {height: 340px;}
+        to {height: 176px;}
+    }
+
+    @keyframes hardware-reveal {
+        from {height: 176px;}
+        to {height: 530px;}
+    }
+    
+    @keyframes hardware-hide {
+        from {height: 530px;}
+        to {height: 176px;}
+    }
 }
 
 @media only screen and (min-width: 1300px) {

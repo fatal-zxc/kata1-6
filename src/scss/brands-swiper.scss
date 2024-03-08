@@ -25,20 +25,31 @@
     // background: url('../img/button.svg') no-repeat;
 }
 
-@media only screen and (min-width: 750px) {
-    .brands-swiper {
-        height: 176px;
-        margin-left: 24px;
+@media only screen and (min-width: 500px) {
+    .brands-swiper__slide {
+        margin-right: 24px;
+        width: 224px;
+        margin-bottom: 16px;
+    }
+
+    .brands-swiper__slide:nth-of-type(2n) {
+        margin-right: 0px;
     }
 
     .brands-swiper__wrapper {
         flex-wrap: wrap;
     }
 
-    .brands-swiper__slide {
+    .brands-swiper {
+        height: 176px;
+        margin-left: 24px;
+    }
+}   
+
+@media only screen and (min-width: 750px) {
+
+    .brands-swiper__slide:nth-of-type(2n) {
         margin-right: 24px;
-        width: 224px;
-        margin-bottom: 16px;
     }
 
     .brands-swiper__slide:nth-of-type(3n) {

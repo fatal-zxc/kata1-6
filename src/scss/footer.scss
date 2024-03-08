@@ -41,11 +41,12 @@
 
 @media only screen and (min-width: 1300px) {
     .footer {
-        position: absolute;
-        top: 1820px;
-        right: 0;
-        width: calc(100vw - 306px);
-        margin-bottom: 20px;
+        // position: absolute;
+        // top: 1820px;
+        // right: 0;
+        float: right;
+        width: calc(100vw - 330px);
+        padding-bottom: 20px;
         height: 65px;
     }
 

@@ -1,6 +1,6 @@
 import Swiper from 'swiper/bundle';
 
-if (window.screen.width <= 550) {
+if (window.screen.width < 500) {
   var swiper = new Swiper(".swiper", {
     slidesPerView: "auto",
     spaceBetween: 16,

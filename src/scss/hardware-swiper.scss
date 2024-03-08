@@ -34,12 +34,7 @@
     z-index: 2;
 }
 
-@media only screen and (min-width: 750px) {
-    .hardware-swiper {
-        height: 176px;
-        margin-left: 24px;
-    }
-
+@media only screen and (min-width: 500px) {
     .hardware-swiper__wrapper {
         flex-wrap: wrap;
     }
@@ -48,6 +43,21 @@
         margin-right: 24px;
         width: 224px;
         margin-bottom: 16px;
+    }
+
+    .hardware-swiper__slide:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+    .hardware-swiper {
+        height: 176px;
+        margin-left: 24px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .hardware-swiper__slide:nth-of-type(2n) {
+        margin-right: 24px;
     }
 
     .hardware-swiper__slide:nth-of-type(3n) {
