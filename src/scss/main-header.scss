@@ -17,6 +17,10 @@
     display: none;
 }
 
+.main-header__button:hover {
+    opacity: 0.7;
+}
+
 @media only screen and (min-width: 321px) {
     .main-header {
         margin-bottom: 32px;

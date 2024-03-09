@@ -16,6 +16,10 @@
     margin-left: 16px;
 }
 
+.feedback__close:hover {
+    opacity: 0.7;
+}
+
 .feedback__title {
     font-family: 'TT Lakes Bold';
     font-size: 24px;
@@ -79,6 +83,10 @@
     margin-top: 24px;
     margin-right: 16px;
     align-self: flex-end;
+}
+
+.feedback__input--submit:hover {
+    opacity: 0.7;
 }
 
 .feedback-toright {
