@@ -6,76 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CPS</title>
   <script defer="defer" src="./js/bundle.js"></script><link href="style.css" rel="stylesheet"></head>
-  <body>
-    <div class="feedback">
-      <button class="feedback__close button-reset"><img class="feedback__img" src="./img/close.svg" alt=""></button>
-      <h1 class="feedback__title">Обратная связь</h1>
-      <form class="feedback__form">
-        <input type="text" placeholder="Имя" name="name" class="feedback__input--text input-reset">
-        <input type="text" placeholder="Телефон" name="phone_number" class="feedback__input--text input-reset">
-        <input type="text" placeholder="Электронная почта" name="email" class="feedback__input--text input-reset">
-        <textarea class="feedback__message textarea-reset" rows="4" placeholder="Сообщение" name="message"></textarea>
-        <p class="feedback__personal">Нажимая “отправить”, вы даете согласие на <a class="feedback__link link-reset">обработку персональных данных</a> и соглашаетесь с нашей <a class="feedback__link link-reset">политикой конфиденциальности</a></p>
-        <input type="submit" value="" class="feedback__input--submit input-reset">
-      </form>
-    </div>
-    <div class="call">
-      <button class="call__close button-reset"><img class="call__img" src="./img/close.svg" alt=""></button>
-      <h1 class="call__title">Заказать звонок</h1>
-      <form class="call__form">
-        <input type="text" placeholder="Телефон" name="phone_number" class="call__input--text input-reset">
-        <p class="call__personal">Нажимая “отправить”, вы даете согласие на <a class="call__link link-reset">обработку персональных данных</a> и соглашаетесь с нашей <a class="call__link link-reset">политикой конфиденциальности</a></p>
-        <input type="submit" value="" class="call__input--submit input-reset">
-      </form>
-    </div>
-    <div class="menu">
-      <header class="menu-header">
-        <ul class="menu-nav list-reset">
-          <li class="menu-nav__item"><button class="menu-nav__button button-close button-reset"><img class="menu-nav__img" src="./img/close.svg"></button></li>
-          <li class="menu-nav__item"><img class="menu-nav__img logo" src="./img/logo.svg"></li>
-          <li class="menu-nav__item"><button class="menu-nav__button button-reset"><img class="menu-nav__img" src="./img/search.svg"></button></li>
-        </ul>
-      </header>
-      <div class="menu-wrapper">
-        <main class="menu-main">
-          <menu class="menu-list list-reset">
-            <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Ремонт техники</a></li>
-            <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Услуги и сервисы</a></li>
-            <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Корпоративным клиентам</a></li>
-            <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Продавцам техники</a></li>
-            <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Партнерам</a></li>
-            <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Производителям</a></li>
-            <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Наши сервисные центры</a></li>
-            <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Контакты</a></li>
-          </menu>
-        </main>
-        <footer class="menu-footer">
-          <div class="menu-footer__container"><ul class="actions list-reset">
-            <li class="actions__item"><button class="actions__button actions__call button-reset"><img class="actions__img" src="./img/call.svg"></button></li>
-            <li class="actions__item"><button class="actions__button actions__chat button-reset"><img class="actions__img" src="./img/chat.svg"></button></li>
-            <li class="actions__item"><button class="actions__button button-reset"><img class="actions__img" src="./img/profile.svg"></button></li>
-          </ul></div>
-          <address class="menu-footer__container"><a class="mail link-reset" href="mailto:mail@cps.com">mail@cps.com</a></address>
-          <address class="menu-footer__container"><a class="number link-reset" href="tel: 88008908900">8 800 890 8900</a></address>
-          <div class="menu-footer__container"><ul class="lang list-reset">
-            <li class="lang__item"><button class="lang__button button-reset">RU</button></li>
-            <li class="lang__item"><button class="lang__button button-reset">EN</button></li>
-            <li class="lang__item"><button class="lang__button button-reset">CH</button></li>
-          </ul></div>
-        </footer>
-      </div>
-    </div>
-    <div class="blur"></div>
+  <body id="body">
     <header class="header">
       <nav class="header-nav">
           <div class="header-nav__div">
-            <button class="header-nav__button button-menu button-reset"><img class="header-nav__item" src="./img/menu.svg" alt=""></button>
+            <button class="header-nav__button button-menu button-reset"><a class="link-reset" href="#body"><img class="header-nav__item" src="./img/menu.svg" alt=""></a></button>
             <img class="header-nav__divider tablet" src="./img/divider.svg" alt="">
             <img class="logo header-nav__logo" src="./img/logo.svg" alt="">
           </div>
           <div class="header-nav__div">
-            <button class="header-nav__button header-nav__call button-reset"><img class="header-nav__item tablet" src="./img/call.svg" alt=""></button>
-            <button class="header-nav__button header-nav__chat button-reset"><img class="header-nav__item tablet" src="./img/chat.svg" alt=""></button>
+            <button class="header-nav__button header-nav__call button-reset"><a class="link-reset" href="#body"><img class="header-nav__item tablet" src="./img/call.svg" alt=""></a></button>
+            <button class="header-nav__button header-nav__chat button-reset"><a class="link-reset" href="#body"><img class="header-nav__item tablet" src="./img/chat.svg" alt=""></a></button>
             <button class="header-nav__button button-reset"><img class="header-nav__item tablet" src="./img/profile.svg" alt=""></button>
             <img class="header-nav__divider" src="./img/divider.svg" alt="">
             <button class="header-nav__button button-reset"><img class="header-nav__item" src="./img/repair.svg" alt=""></button>
@@ -85,7 +26,7 @@
   </header>
   <main class="main">
       <header class="main-header">
-          <p class="main-header__title"><b>Услуги и сервисы</b></p>
+          <h1 class="main-header__title"><b>Услуги и сервисы</b></h1>
           <div class="main-header__container">
               <p class="main-header__text">Оставить заявку</p>
               <button class="main-header__button button-reset"><img class="main-header__img" src="./img/repair.svg" alt=""></button>
@@ -117,7 +58,7 @@
           <img class="introduction__img" src="./img/photo.jpg" alt="">
       </article>
     <div class="brands">
-      <h1 class="brands-title">Ремонт техники различных брендов</h1>
+      <h2 class="brands-title">Ремонт техники различных брендов</h2>
       <div class="brands-swiper swiper">
         <div class="brands-swiper__wrapper swiper-wrapper">
           <div class="brands-swiper__slide swiper-slide">
@@ -173,7 +114,7 @@
       </button>
     </div>
     <div class="hardware">
-      <h1 class="hardware-title">Ремонт различных видов техники</h1>
+      <h2 class="hardware-title">Ремонт различных видов техники</h2>
       <div class="hardware-swiper swiper">
         <div class="hardware-swiper__wrapper swiper-wrapper">
           <div class="hardware-swiper__slide swiper-slide">
@@ -221,8 +162,8 @@
       </button>
     </div>
     <div class="price">
+      <h2 class="price-title">Цены на услуги</h2>
       <div class="price__cards">
-        <h1 class="price-title">Цены на услуги</h1>
         <div class="price-swiper swiper">
           <div class="price-swiper__wrapper swiper-wrapper">
             <div class="price-swiper__slide swiper-slide">
@@ -305,43 +246,42 @@
         </div>
       </div>
       <div class="price-table">
-        <h1 class="price-table__title">Цены на услуги</h1>
         <div class="price-table__content">
           <div class="price-table__row">
             <p class="price-table__text">Ремонтные услуги</p>
             <p class="price-table__text">Цена</p>
             <p class="price-table__text">Срок</p>
-            <button class="price-table__button button-reset"><img class="price-table_img" src="./img/order.svg" alt=""></button>
+            <button class="price-table__button button-reset"><img class="price-table__img" src="./img/order.svg" alt=""></button>
           </div>
           <div class="price-table__row">
             <p class="price-table__text">Диагностика</p>
             <p class="price-table__text">Бесплатно</p>
             <p class="price-table__text">30 мин</p>
-            <button class="price-table__button button-reset"><img class="price-table_img" src="./img/order.svg" alt=""></button>
+            <button class="price-table__button button-reset"><img class="price-table__img" src="./img/order.svg" alt=""></button>
           </div>
           <div class="price-table__row">
             <p class="price-table__text">Замена дисплея</p>
             <p class="price-table__text">1 000 ₽</p>
             <p class="price-table__text">30-120 мин</p>
-            <button class="price-table__button button-reset"><img class="price-table_img" src="./img/order.svg" alt=""></button>
+            <button class="price-table__button button-reset"><img class="price-table__img" src="./img/order.svg" alt=""></button>
           </div>
           <div class="price-table__row">
             <p class="price-table__text">Замена полифонического динамика</p>
             <p class="price-table__text">1 000 ₽</p>
             <p class="price-table__text">30-120 мин</p>
-            <button class="price-table__button button-reset"><img class="price-table_img" src="./img/order.svg" alt=""></button>
+            <button class="price-table__button button-reset"><img class="price-table__img" src="./img/order.svg" alt=""></button>
           </div>
           <div class="price-table__row">
             <p class="price-table__text">Тестирование с выдачей технического заключения</p>
             <p class="price-table__text">1 000 ₽</p>
             <p class="price-table__text">30-120 мин</p>
-            <button class="price-table__button button-reset"><img class="price-table_img" src="./img/order.svg" alt=""></button>
+            <button class="price-table__button button-reset"><img class="price-table__img" src="./img/order.svg" alt=""></button>
           </div>
           <div class="price-table__row">
             <p class="price-table__text">Замена программного обеспечения</p>
             <p class="price-table__text">1 000 ₽</p>
             <p class="price-table__text">30-120 мин</p>
-            <button class="price-table__button button-reset"><img class="price-table_img" src="./img/order.svg" alt=""></button>
+            <button class="price-table__button button-reset"><img class="price-table__img" src="./img/order.svg" alt=""></button>
           </div>
         </div>
       </div>
@@ -358,5 +298,66 @@
     <p class="footer__text">Политика конфиденциальности</p>
     <p class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
   </footer>
+  <section class="call">
+    <button class="call__close button-reset"><img class="call__img" src="./img/close.svg" alt=""></button>
+    <h1 class="call__title">Заказать звонок</h1>
+    <form class="call__form">
+      <input type="text" placeholder="Телефон" name="phone_number" class="call__input--text input-reset">
+      <p class="call__personal">Нажимая “отправить”, вы даете согласие на <a class="call__link link-reset">обработку персональных данных</a> и соглашаетесь с нашей <a class="call__link link-reset">политикой конфиденциальности</a></p>
+      <button class="call__submit button-reset"></button>
+    </form>
+  </section>
+  <section class="feedback">
+    <button class="feedback__close button-reset"><img class="feedback__img" src="./img/close.svg" alt=""></button>
+    <h1 class="feedback__title">Обратная связь</h1>
+    <form class="feedback__form">
+      <input type="text" placeholder="Имя" name="name" class="feedback__input--text input-reset">
+      <input type="text" placeholder="Телефон" name="phone_number" class="feedback__input--text input-reset">
+      <input type="text" placeholder="Электронная почта" name="email" class="feedback__input--text input-reset">
+      <textarea class="feedback__message textarea-reset" rows="4" placeholder="Сообщение" name="message"></textarea>
+      <p class="feedback__personal">Нажимая “отправить”, вы даете согласие на <a class="feedback__link link-reset">обработку персональных данных</a> и соглашаетесь с нашей <a class="feedback__link link-reset">политикой конфиденциальности</a></p>
+      <button class="feedback__submit button-reset"></button>
+    </form>
+  </section>
+  <section class="menu">
+    <header class="menu__header">
+      <ul class="menu-nav list-reset">
+        <li class="menu-nav__item"><button class="menu-nav__button button-close button-reset"><img class="menu-nav__img" src="./img/close.svg"></button></li>
+        <li class="menu-nav__item"><img class="menu-nav__img logo" src="./img/logo.svg"></li>
+        <li class="menu-nav__item"><button class="menu-nav__button button-reset"><img class="menu-nav__img" src="./img/search.svg"></button></li>
+      </ul>
+    </header>
+    <div class="menu-wrapper">
+      <main class="menu-main">
+        <menu class="menu-list list-reset">
+          <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Ремонт техники</a></li>
+          <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Услуги и сервисы</a></li>
+          <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Корпоративным клиентам</a></li>
+          <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Продавцам техники</a></li>
+          <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Партнерам</a></li>
+          <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Производителям</a></li>
+          <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Наши сервисные центры</a></li>
+          <li class="menu-list__item"><a class="menu-list__link link-reset" href="#">Контакты</a></li>
+        </menu>
+      </main>
+      <footer class="menu-footer">
+        <div class="menu-footer__container"><ul class="actions list-reset">
+          <li class="actions__item"><button class="actions__button actions__call button-reset"><a class="link-reset" href="#body"><img class="actions__img" src="./img/call.svg"></a></button></li>
+          <li class="actions__item"><button class="actions__button actions__chat button-reset"><a class="link-reset" href="#body"><img class="actions__img" src="./img/chat.svg"></a></button></li>
+          <li class="actions__item"><button class="actions__button button-reset"><img class="actions__img" src="./img/profile.svg"></button></li>
+        </ul></div>
+        <address class="menu-footer__container"><a class="mail link-reset" href="mailto:mail@cps.com">mail@cps.com</a></address>
+        <address class="menu-footer__container"><a class="number link-reset" href="tel: 88008908900">8 800 890 8900</a></address>
+        <div class="menu-footer__container">
+          <ul class="lang list-reset">
+            <li class="lang__item"><button class="lang__button button-reset">RU</button></li>
+            <li class="lang__item"><button class="lang__button button-reset">EN</button></li>
+            <li class="lang__item"><button class="lang__button button-reset">CH</button></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+  <section class="blur"></section>
   </body>
 </html>
