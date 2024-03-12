@@ -4,11 +4,15 @@ let buttonClose = document.querySelector('.feedback__close');
 let feedback = document.querySelector('.feedback');
 let blur = document.querySelector('.blur');
 let call = document.querySelector('.call');
+let body = document.querySelector('body');
+let menu = document.querySelector('.menu');
 
 function feedbackOut() {
 
     feedback.classList.remove('feedback-toleft');
     feedback.classList.add('feedback-toright');
+
+    if (menu.classList.contains('menu-toright') === false) body.classList.remove('overflow-hidden');
 
     blur.classList.remove('getblur');
     blur.classList.add('unblur');
@@ -18,6 +22,8 @@ function feedbackOut() {
 function feedbackClick() {
     feedback.classList.remove('feedback-toright');
     feedback.classList.add('feedback-toleft');
+
+    body.classList.add('overflow-hidden');
 
     blur.style.height = document.body.scrollHeight + 'px';
     blur.classList.remove('unblur');

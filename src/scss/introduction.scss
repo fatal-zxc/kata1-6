@@ -14,7 +14,6 @@
     opacity: 0.8;
     font-size: 13px;
     margin-bottom: 16px;
-    /* height: 90px; */
 }
 
 .introduction__reveal {
@@ -24,6 +23,10 @@
     display: flex;
     align-items: center;
     background-color: #f8f8f8;
+}
+
+.introduction__reveal:hover {
+    opacity: 0.7;    
 }
 
 .introduction__next {
